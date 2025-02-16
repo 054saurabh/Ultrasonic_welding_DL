@@ -18,7 +18,7 @@ def predection():
     if(image_file.filename ==""):
         return render_template("proje.html",prediction = "Please upload the image" )
     else:
-        #save image to a direactory
+        #save image
         downloads_dir = os.path.join(app.root_path, 'static/downloads')
         os.makedirs(downloads_dir, exist_ok=True)
         image_path = os.path.join(downloads_dir, image_file.filename)
