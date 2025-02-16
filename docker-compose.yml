@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  flask_app:
+    build: .
+    container_name: flask_container
+    ports:
+      - "5070:5070"
+    environment:
+      - FLASK_ENV=development
+    restart: always
