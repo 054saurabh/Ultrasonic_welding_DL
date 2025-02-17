@@ -23,7 +23,7 @@ def predection():
         os.makedirs(downloads_dir, exist_ok=True)
         image_path = os.path.join(downloads_dir, image_file.filename)
         image_file.save(image_path)
-    
+    #load model
         model = load_model('./Ultrasonic_welding_IPDL.h5')
        
         img = Image.open(image_path)
