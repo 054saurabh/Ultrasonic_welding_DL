@@ -40,6 +40,7 @@ def predection():
         display_image = "static/downloads/"+image_file.filename
         
         return render_template("proje.html",prediction = defect,uploaded_image=display_image)
+    
 
 if __name__ == '__main__':
     app.run(debug=True,host='0.0.0.0',port=5070)
