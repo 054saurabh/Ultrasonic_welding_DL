@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request
 from keras.models import load_model
+
 import os
 import numpy as np
 from PIL import Image
@@ -9,6 +10,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello_world():
     return render_template("proje.html")
+
 
 @app.route("/predect", methods=['POST'])
 def predection():
